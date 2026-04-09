@@ -69,14 +69,23 @@
 
         left_layer {
             bindings = <
-&kp TILDE         &kp F1        &kp F2         &kp F3         &kp F12    &trans  &trans                 &trans           &trans           &kp LEFT_BRACE
-&hrm LWIN ESCAPE  &hrm LALT F4  &hrm LCTRL F5  &hrm LSHFT F6  &kp F11    &trans  &hrm RIGHT_SHIFT LEFT  &hrm RCTRL DOWN  &hrm RALT RIGHT  &hrm RWIN DOUBLE_QUOTES
-&kp PIPE          &kp F7        &kp F8         &kp F9         &kp F10    &trans  &trans                 &trans           &trans           &kp RIGHT_BRACE
-                                               &trans         &trans     &trans  &trans
+&kp TILDE         &kp F1        &kp F2         &kp F3         &kp F12    &kp PG_UP  &kp HOME               &kp UP           &kp END          &kp LEFT_BRACE
+&hrm LWIN ESCAPE  &hrm LALT F4  &hrm LCTRL F5  &hrm LSHFT F6  &kp F11    &kp PG_DN  &hrm RIGHT_SHIFT LEFT  &hrm RCTRL DOWN  &hrm RALT RIGHT  &hrm RWIN DOUBLE_QUOTES
+&kp PIPE          &kp F7        &kp F8         &kp F9         &kp F10    &make      &kp BSPC               &kp RET          &kp DEL          &kp RIGHT_BRACE
+                                               &trans         &trans     &trans     &trans
             >;
         };
 
         tri_layer {
+            bindings = <
+&kp TILDE     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS                 &kp PG_UP  &kp LS(HOME)  &kp LS(UP)    &kp LS(END)    &kp LEFT_BRACE
+&kp CAPSLOCK  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp UNDERSCORE           &kp PG_DN  &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp DOUBLE_QUOTES
+&kp PIPE      &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &make      &kp LS(BSPC)  &kp LS(RET)   &kp LS(DEL)    &kp RIGHT_BRACE
+                                             &sl 4                 &sl 4                    &sl 4      &sl 4
+            >;
+        };
+
+        debug {
             bindings = <
 &kp TILDE     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS                 &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &sys_reset
 &kp CAPSLOCK  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp UNDERSCORE           &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
