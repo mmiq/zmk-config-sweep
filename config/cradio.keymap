@@ -66,7 +66,7 @@
             bindings = <
 &hrm LWIN GRAVE      &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp F1  &kp F2   &kp F3   &kp F4   &hrm RWIN LEFT_BRACKET
 &hrm LCTRL ESCAPE    &kp N4  &kp N5  &kp N6  &kp MINUS    &kp F5  &kp F6   &kp F7   &kp F8   &hrm RCTRL SQT
-&hrm LWIN BACKSLASH  &kp N7  &kp N8  &kp N9  &kp N0       &kp F9  &kp F10  &kp F11  &kp F12  &hrm RALT RIGHT_BRACKET
+&hrm LALT BACKSLASH  &kp N7  &kp N8  &kp N9  &kp N0       &kp F9  &kp F10  &kp F11  &kp F12  &hrm RALT RIGHT_BRACKET
                                      &trans  &trans       &trans  &trans
             >;
 
@@ -77,7 +77,7 @@
             bindings = <
 &hrm LWIN GRAVE      &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp PG_UP      &kp HOME  &kp UP          &kp END    &hrm RWIN LBKT
 &hrm LCTRL ESCAPE    &kp N4  &kp N5  &kp N6  &kp MINUS    &kp PAGE_DOWN  &kp LEFT  &kp DOWN        &kp RIGHT  &hrm RCTRL SQT
-&hrm LWIN BACKSLASH  &kp N7  &kp N8  &kp N9  &kp N0       &kp INSERT     &kp BSPC  &kp LEFT_SHIFT  &kp DEL    &hrm RALT RBKT
+&hrm LALT BACKSLASH  &kp N7  &kp N8  &kp N9  &kp N0       &kp INSERT     &kp BSPC  &kp LEFT_SHIFT  &kp DEL    &hrm RALT RBKT
                                      &trans  &trans       &trans         &trans
             >;
 
