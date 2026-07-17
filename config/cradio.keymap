@@ -48,6 +48,11 @@
             if-layers = <3 1 2>;
             then-layer = <4>;
         };
+
+        two_layers {
+            if-layers = <2 3>;
+            then-layer = <5>;
+        };
     };
 
     macros {
@@ -86,9 +91,9 @@
 
         Characters_n_Numbers {
             bindings = <
-&hrm LWIN TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS                 &kp PG_UP        &kp HOME  &kp UP    &kp END    &hrm RWIN LEFT_BRACE
-&hrm LCTRL ESC   &kp DOLLAR       &kp PERCENT   &kp CARET             &kp UNDERSCORE           &kp PG_DN        &kp LEFT  &kp DOWN  &kp RIGHT  &hrm RCTRL DOUBLE_QUOTES
-&hrm LALT PIPE   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PRINTSCREEN  &make     &kp INS   &kp DEL    &hrm RALT RIGHT_BRACE
+&hrm LWIN TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS                 &kp PG_UP        &kp HOME  &kp UP    &kp END    &hrm RWIN LBKT
+&hrm LCTRL ESC   &kp DOLLAR       &kp PERCENT   &kp CARET             &kp UNDERSCORE           &kp PG_DN        &kp LEFT  &kp DOWN  &kp RIGHT  &hrm RCTRL SQT
+&hrm LALT PIPE   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PRINTSCREEN  &make     &kp INS   &kp DEL    &hrm RALT RBKT
                                                 &trans                &trans                   &trans           &trans
             >;
 
@@ -97,9 +102,9 @@
 
         Numbers_n_Arrows {
             bindings = <
-&hrm LWIN GRAVE      &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp PG_UP        &kp HOME  &kp UP    &kp END    &hrm RWIN LBKT
-&hrm LCTRL ESCAPE    &kp N4  &kp N5  &kp N6  &kp MINUS    &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp RIGHT  &hrm RCTRL SQT
-&hrm LALT BACKSLASH  &kp N7  &kp N8  &kp N9  &kp N0       &kp PRINTSCREEN  &make     &kp INS   &kp DEL    &hrm RALT RBKT
+&hrm LWIN GRAVE      &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp PG_UP        &kp HOME  &kp UP    &kp END    &hrm RWIN LBRC
+&hrm LCTRL ESCAPE    &kp N4  &kp N5  &kp N6  &kp MINUS    &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp RIGHT  &hrm RCTRL DQT
+&hrm LALT BACKSLASH  &kp N7  &kp N8  &kp N9  &kp N0       &kp PRINTSCREEN  &make     &kp INS   &kp DEL    &hrm RALT RBRC
                                      &trans  &trans       &trans           &trans
             >;
 
@@ -115,6 +120,16 @@
             >;
 
             label = "dbg";
+        };
+
+        Capitals {
+            label = "chr_CAPS";
+            bindings = <
+&hrm LWIN TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS                 &kp PG_UP        &kp HOME  &kp UP    &kp END    &hrm RWIN LBRC
+&hrm LCTRL ESC   &kp DOLLAR       &kp PERCENT   &kp CARET             &kp UNDERSCORE           &kp PG_DN        &kp LEFT  &kp DOWN  &kp RIGHT  &hrm RCTRL DQT
+&hrm LALT PIPE   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PRINTSCREEN  &make     &kp INS   &kp DEL    &hrm RALT RBRC
+                                                &trans                &trans                   &trans           &trans
+            >;
         };
     };
 };
